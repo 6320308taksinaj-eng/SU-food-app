@@ -1,12 +1,11 @@
-import react from 'react'
-import RootDom from 'react-dom/client'
-import './index.css'
+import React from 'react'
+import ReactDOM from 'react-dom/client' // <-- ต้องสะกดแบบนี้
 import App from './App.jsx'
-import { BroeserRouter} from 'react-router-dom'
+import './index.css'
+import { BrowserRouter } from 'react-router-dom' // <-- สัปดาห์ก่อนที่แก้ไป
 
-ReatcDom.creaateRoot(document.getElementById('root')).render(
+ReactDOM.createRoot(document.getElementById('root')).render(
   <BrowserRouter>
     <App />
   </BrowserRouter>
-
 )
